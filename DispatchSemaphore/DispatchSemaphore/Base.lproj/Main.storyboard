@@ -40,6 +40,9 @@
                             <constraint firstAttribute="trailing" secondItem="3v7-TX-2Hd" secondAttribute="trailing" constant="30" id="OIC-z6-o8m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="semaphoreLabel" destination="3v7-TX-2Hd" id="s20-Yt-Dmk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
