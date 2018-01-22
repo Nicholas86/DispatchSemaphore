@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004ADBA620157126002126B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBA520157126002126B9 /* AppDelegate.m */; };
+		004ADBA920157126002126B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBA820157126002126B9 /* ViewController.m */; };
+		004ADBAC20157126002126B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004ADBAA20157126002126B9 /* Main.storyboard */; };
+		004ADBAE20157126002126B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004ADBAD20157126002126B9 /* Assets.xcassets */; };
+		004ADBB120157126002126B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004ADBAF20157126002126B9 /* LaunchScreen.storyboard */; };
+		004ADBB420157126002126B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBB320157126002126B9 /* main.m */; };
+		004ADBBE20157126002126B9 /* DispatchSemaphoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBBD20157126002126B9 /* DispatchSemaphoreTests.m */; };
+		004ADBC920157126002126B9 /* DispatchSemaphoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBC820157126002126B9 /* DispatchSemaphoreUITests.m */; };
+		2C5746393A29F673B90D7337 /* libPods-DispatchSemaphoreUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AAD685F5F1DF3E507CBD91 /* libPods-DispatchSemaphoreUITests.a */; };
+		8158D4043058F3C5C5A118CF /* libPods-DispatchSemaphore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD2A6A6B230B0561531937 /* libPods-DispatchSemaphore.a */; };
+		B56F3D392E4D1977F3BA9BC8 /* libPods-DispatchSemaphoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5580DBE101E43C0195BD98AB /* libPods-DispatchSemaphoreTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004ADBBA20157126002126B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004ADB9920157126002126B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004ADBA020157126002126B9;
+			remoteInfo = DispatchSemaphore;
+		};
+		004ADBC520157126002126B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004ADB9920157126002126B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004ADBA020157126002126B9;
+			remoteInfo = DispatchSemaphore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004ADBA120157126002126B9 /* DispatchSemaphore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DispatchSemaphore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		004ADBA420157126002126B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		004ADBA520157126002126B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		004ADBA720157126002126B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		004ADBA820157126002126B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		004ADBAB20157126002126B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		004ADBAD20157126002126B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		004ADBB020157126002126B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		004ADBB220157126002126B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004ADBB320157126002126B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		004ADBB920157126002126B9 /* DispatchSemaphoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchSemaphoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004ADBBD20157126002126B9 /* DispatchSemaphoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreTests.m; sourceTree = "<group>"; };
+		004ADBBF20157126002126B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004ADBC420157126002126B9 /* DispatchSemaphoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchSemaphoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004ADBC820157126002126B9 /* DispatchSemaphoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreUITests.m; sourceTree = "<group>"; };
+		004ADBCA20157126002126B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC3ACEDACD833524B87C621 /* Pods-DispatchSemaphoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		391DD605D43D696F2B05DC12 /* Pods-DispatchSemaphoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5580DBE101E43C0195BD98AB /* libPods-DispatchSemaphoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DispatchSemaphoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D27F6126041BB125ECED03 /* Pods-DispatchSemaphoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreTests/Pods-DispatchSemaphoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		97AAD685F5F1DF3E507CBD91 /* libPods-DispatchSemaphoreUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DispatchSemaphoreUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE05729D736D2908A95C5BEA /* Pods-DispatchSemaphore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphore.release.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphore/Pods-DispatchSemaphore.release.xcconfig"; sourceTree = "<group>"; };
+		E5FD2A6A6B230B0561531937 /* libPods-DispatchSemaphore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DispatchSemaphore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD928076616408D0777D6EC8 /* Pods-DispatchSemaphoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreTests/Pods-DispatchSemaphoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FED197DA86618C2EE46DFD78 /* Pods-DispatchSemaphore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphore/Pods-DispatchSemaphore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004ADB9E20157126002126B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8158D4043058F3C5C5A118CF /* libPods-DispatchSemaphore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBB620157126002126B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56F3D392E4D1977F3BA9BC8 /* libPods-DispatchSemaphoreTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBC120157126002126B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5746393A29F673B90D7337 /* libPods-DispatchSemaphoreUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004ADB9820157126002126B9 = {
+			isa = PBXGroup;
+			children = (
+				004ADBA320157126002126B9 /* DispatchSemaphore */,
+				004ADBBC20157126002126B9 /* DispatchSemaphoreTests */,
+				004ADBC720157126002126B9 /* DispatchSemaphoreUITests */,
+				004ADBA220157126002126B9 /* Products */,
+				B65B5D097037AF823F098044 /* Pods */,
+				6367A0717A66CAAED49543BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		004ADBA220157126002126B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				004ADBA120157126002126B9 /* DispatchSemaphore.app */,
+				004ADBB920157126002126B9 /* DispatchSemaphoreTests.xctest */,
+				004ADBC420157126002126B9 /* DispatchSemaphoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		004ADBA320157126002126B9 /* DispatchSemaphore */ = {
+			isa = PBXGroup;
+			children = (
+				004ADBA420157126002126B9 /* AppDelegate.h */,
+				004ADBA520157126002126B9 /* AppDelegate.m */,
+				004ADBA720157126002126B9 /* ViewController.h */,
+				004ADBA820157126002126B9 /* ViewController.m */,
+				004ADBAA20157126002126B9 /* Main.storyboard */,
+				004ADBAD20157126002126B9 /* Assets.xcassets */,
+				004ADBAF20157126002126B9 /* LaunchScreen.storyboard */,
+				004ADBB220157126002126B9 /* Info.plist */,
+				004ADBB320157126002126B9 /* main.m */,
+			);
+			path = DispatchSemaphore;
+			sourceTree = "<group>";
+		};
+		004ADBBC20157126002126B9 /* DispatchSemaphoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				004ADBBD20157126002126B9 /* DispatchSemaphoreTests.m */,
+				004ADBBF20157126002126B9 /* Info.plist */,
+			);
+			path = DispatchSemaphoreTests;
+			sourceTree = "<group>";
+		};
+		004ADBC720157126002126B9 /* DispatchSemaphoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				004ADBC820157126002126B9 /* DispatchSemaphoreUITests.m */,
+				004ADBCA20157126002126B9 /* Info.plist */,
+			);
+			path = DispatchSemaphoreUITests;
+			sourceTree = "<group>";
+		};
+		6367A0717A66CAAED49543BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5FD2A6A6B230B0561531937 /* libPods-DispatchSemaphore.a */,
+				5580DBE101E43C0195BD98AB /* libPods-DispatchSemaphoreTests.a */,
+				97AAD685F5F1DF3E507CBD91 /* libPods-DispatchSemaphoreUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B65B5D097037AF823F098044 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FED197DA86618C2EE46DFD78 /* Pods-DispatchSemaphore.debug.xcconfig */,
+				AE05729D736D2908A95C5BEA /* Pods-DispatchSemaphore.release.xcconfig */,
+				FD928076616408D0777D6EC8 /* Pods-DispatchSemaphoreTests.debug.xcconfig */,
+				80D27F6126041BB125ECED03 /* Pods-DispatchSemaphoreTests.release.xcconfig */,
+				0DC3ACEDACD833524B87C621 /* Pods-DispatchSemaphoreUITests.debug.xcconfig */,
+				391DD605D43D696F2B05DC12 /* Pods-DispatchSemaphoreUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		004ADBA020157126002126B9 /* DispatchSemaphore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004ADBCD20157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphore" */;
+			buildPhases = (
+				379A6D1EA5A4B0F11F897CB0 /* [CP] Check Pods Manifest.lock */,
+				004ADB9D20157126002126B9 /* Sources */,
+				004ADB9E20157126002126B9 /* Frameworks */,
+				004ADB9F20157126002126B9 /* Resources */,
+				B0E1CFCF86D5CE86DB11EB4E /* [CP] Embed Pods Frameworks */,
+				51A84C7A8F9C296FDCF0E0CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DispatchSemaphore;
+			productName = DispatchSemaphore;
+			productReference = 004ADBA120157126002126B9 /* DispatchSemaphore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		004ADBB820157126002126B9 /* DispatchSemaphoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004ADBD020157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphoreTests" */;
+			buildPhases = (
+				6EB90242D77062B7E3FD2817 /* [CP] Check Pods Manifest.lock */,
+				004ADBB520157126002126B9 /* Sources */,
+				004ADBB620157126002126B9 /* Frameworks */,
+				004ADBB720157126002126B9 /* Resources */,
+				41E5739CB91AD0614D4EB5F0 /* [CP] Embed Pods Frameworks */,
+				A618FFF4374A1767BD184E72 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004ADBBB20157126002126B9 /* PBXTargetDependency */,
+			);
+			name = DispatchSemaphoreTests;
+			productName = DispatchSemaphoreTests;
+			productReference = 004ADBB920157126002126B9 /* DispatchSemaphoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		004ADBC320157126002126B9 /* DispatchSemaphoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004ADBD320157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphoreUITests" */;
+			buildPhases = (
+				A33CC8AEB92C9A07B9E5FB86 /* [CP] Check Pods Manifest.lock */,
+				004ADBC020157126002126B9 /* Sources */,
+				004ADBC120157126002126B9 /* Frameworks */,
+				004ADBC220157126002126B9 /* Resources */,
+				046D95134D8BF2DE5B641C26 /* [CP] Embed Pods Frameworks */,
+				4EC61598E2E6A3D38506F8D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004ADBC620157126002126B9 /* PBXTargetDependency */,
+			);
+			name = DispatchSemaphoreUITests;
+			productName = DispatchSemaphoreUITests;
+			productReference = 004ADBC420157126002126B9 /* DispatchSemaphoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		004ADB9920157126002126B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = a;
+				TargetAttributes = {
+					004ADBA020157126002126B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					004ADBB820157126002126B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004ADBA020157126002126B9;
+					};
+					004ADBC320157126002126B9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 004ADBA020157126002126B9;
+					};
+				};
+			};
+			buildConfigurationList = 004ADB9C20157126002126B9 /* Build configuration list for PBXProject "DispatchSemaphore" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 004ADB9820157126002126B9;
+			productRefGroup = 004ADBA220157126002126B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				004ADBA020157126002126B9 /* DispatchSemaphore */,
+				004ADBB820157126002126B9 /* DispatchSemaphoreTests */,
+				004ADBC320157126002126B9 /* DispatchSemaphoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		004ADB9F20157126002126B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004ADBB120157126002126B9 /* LaunchScreen.storyboard in Resources */,
+				004ADBAE20157126002126B9 /* Assets.xcassets in Resources */,
+				004ADBAC20157126002126B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBB720157126002126B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBC220157126002126B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		046D95134D8BF2DE5B641C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		379A6D1EA5A4B0F11F897CB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DispatchSemaphore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41E5739CB91AD0614D4EB5F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphoreTests/Pods-DispatchSemaphoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC61598E2E6A3D38506F8D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51A84C7A8F9C296FDCF0E0CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphore/Pods-DispatchSemaphore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB90242D77062B7E3FD2817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DispatchSemaphoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A33CC8AEB92C9A07B9E5FB86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DispatchSemaphoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A618FFF4374A1767BD184E72 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphoreTests/Pods-DispatchSemaphoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E1CFCF86D5CE86DB11EB4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DispatchSemaphore/Pods-DispatchSemaphore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004ADB9D20157126002126B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004ADBA920157126002126B9 /* ViewController.m in Sources */,
+				004ADBB420157126002126B9 /* main.m in Sources */,
+				004ADBA620157126002126B9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBB520157126002126B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004ADBBE20157126002126B9 /* DispatchSemaphoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004ADBC020157126002126B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004ADBC920157126002126B9 /* DispatchSemaphoreUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		004ADBBB20157126002126B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004ADBA020157126002126B9 /* DispatchSemaphore */;
+			targetProxy = 004ADBBA20157126002126B9 /* PBXContainerItemProxy */;
+		};
+		004ADBC620157126002126B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004ADBA020157126002126B9 /* DispatchSemaphore */;
+			targetProxy = 004ADBC520157126002126B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		004ADBAA20157126002126B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004ADBAB20157126002126B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		004ADBAF20157126002126B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004ADBB020157126002126B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		004ADBCB20157126002126B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		004ADBCC20157126002126B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		004ADBCE20157126002126B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED197DA86618C2EE46DFD78 /* Pods-DispatchSemaphore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		004ADBCF20157126002126B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE05729D736D2908A95C5BEA /* Pods-DispatchSemaphore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		004ADBD120157126002126B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD928076616408D0777D6EC8 /* Pods-DispatchSemaphoreTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DispatchSemaphore.app/DispatchSemaphore";
+			};
+			name = Debug;
+		};
+		004ADBD220157126002126B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D27F6126041BB125ECED03 /* Pods-DispatchSemaphoreTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DispatchSemaphore.app/DispatchSemaphore";
+			};
+			name = Release;
+		};
+		004ADBD420157126002126B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC3ACEDACD833524B87C621 /* Pods-DispatchSemaphoreUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DispatchSemaphore;
+			};
+			name = Debug;
+		};
+		004ADBD520157126002126B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391DD605D43D696F2B05DC12 /* Pods-DispatchSemaphoreUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WK6R7V524D;
+				INFOPLIST_FILE = DispatchSemaphoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DispatchSemaphore.DispatchSemaphoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DispatchSemaphore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004ADB9C20157126002126B9 /* Build configuration list for PBXProject "DispatchSemaphore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004ADBCB20157126002126B9 /* Debug */,
+				004ADBCC20157126002126B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004ADBCD20157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004ADBCE20157126002126B9 /* Debug */,
+				004ADBCF20157126002126B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004ADBD020157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004ADBD120157126002126B9 /* Debug */,
+				004ADBD220157126002126B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004ADBD320157126002126B9 /* Build configuration list for PBXNativeTarget "DispatchSemaphoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004ADBD420157126002126B9 /* Debug */,
+				004ADBD520157126002126B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 004ADB9920157126002126B9 /* Project object */;
+}
