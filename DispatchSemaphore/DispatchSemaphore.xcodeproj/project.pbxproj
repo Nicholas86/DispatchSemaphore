@@ -15,6 +15,7 @@
 		004ADBB420157126002126B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBB320157126002126B9 /* main.m */; };
 		004ADBBE20157126002126B9 /* DispatchSemaphoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBBD20157126002126B9 /* DispatchSemaphoreTests.m */; };
 		004ADBC920157126002126B9 /* DispatchSemaphoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004ADBC820157126002126B9 /* DispatchSemaphoreUITests.m */; };
+		00A569B12015FF9E00C6A77B /* KCImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A569B02015FF9E00C6A77B /* KCImageData.m */; };
 		2C5746393A29F673B90D7337 /* libPods-DispatchSemaphoreUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AAD685F5F1DF3E507CBD91 /* libPods-DispatchSemaphoreUITests.a */; };
 		8158D4043058F3C5C5A118CF /* libPods-DispatchSemaphore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD2A6A6B230B0561531937 /* libPods-DispatchSemaphore.a */; };
 		B56F3D392E4D1977F3BA9BC8 /* libPods-DispatchSemaphoreTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5580DBE101E43C0195BD98AB /* libPods-DispatchSemaphoreTests.a */; };
@@ -54,6 +55,8 @@
 		004ADBC420157126002126B9 /* DispatchSemaphoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DispatchSemaphoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		004ADBC820157126002126B9 /* DispatchSemaphoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreUITests.m; sourceTree = "<group>"; };
 		004ADBCA20157126002126B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A569AF2015FF9E00C6A77B /* KCImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCImageData.h; sourceTree = "<group>"; };
+		00A569B02015FF9E00C6A77B /* KCImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCImageData.m; sourceTree = "<group>"; };
 		0DC3ACEDACD833524B87C621 /* Pods-DispatchSemaphoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		391DD605D43D696F2B05DC12 /* Pods-DispatchSemaphoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DispatchSemaphoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DispatchSemaphoreUITests/Pods-DispatchSemaphoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5580DBE101E43C0195BD98AB /* libPods-DispatchSemaphoreTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DispatchSemaphoreTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +125,8 @@
 				004ADBA520157126002126B9 /* AppDelegate.m */,
 				004ADBA720157126002126B9 /* ViewController.h */,
 				004ADBA820157126002126B9 /* ViewController.m */,
+				00A569AF2015FF9E00C6A77B /* KCImageData.h */,
+				00A569B02015FF9E00C6A77B /* KCImageData.m */,
 				004ADBAA20157126002126B9 /* Main.storyboard */,
 				004ADBAD20157126002126B9 /* Assets.xcassets */,
 				004ADBAF20157126002126B9 /* LaunchScreen.storyboard */,
@@ -464,6 +469,7 @@
 				004ADBA920157126002126B9 /* ViewController.m in Sources */,
 				004ADBB420157126002126B9 /* main.m in Sources */,
 				004ADBA620157126002126B9 /* AppDelegate.m in Sources */,
+				00A569B12015FF9E00C6A77B /* KCImageData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
