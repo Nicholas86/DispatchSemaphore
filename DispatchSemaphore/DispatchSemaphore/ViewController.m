@@ -10,7 +10,6 @@
 
 #import "KCImageData.h"
 
-
 #define ROW_COUNT 5
 #define COLUMN_COUNT 3
 #define ROW_HEIGHT 100
@@ -18,6 +17,7 @@
 #define CELL_SPACING 10
 #define IMAGE_COUNT 9
 
+#pragma mark 参考文章: https://www.jianshu.com/p/a84c2bf0d77b
 
 @interface ViewController ()
 {
@@ -42,9 +42,13 @@
     
     //信号量
     //[self  dispatchSemaphore];
+    //保持线程同步
+    //[self  dispatchSerialWithSemaphore];
+    //为线程加锁
+    [self  dispatchLockWithSemaphore];
     
     //线程同步(解决资源抢夺)
-     [self layoutUI];
+    //[self layoutUI];
 }
 
 
@@ -54,6 +58,11 @@
 }
 
 #pragma mark 信号量
+/*
+ 首先，我理解的dispatch_semaphore有两个主要应用 ：
+ 1. 保持线程同步
+ 2. 为线程加锁 **
+ */
 
 /*
  我们来思考一下这种情况:不考虑顺序,将所有数据追加到NSMutableArray中
@@ -68,6 +77,62 @@
             [array addObject:[NSNumber numberWithInt:i]];
         });
     }
+}
+
+//1. 保持线程同步
+- (void)dispatchSerialWithSemaphore
+{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    //创建信号量:(默认为0)
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    NSLog(@"semaphore1:%@", semaphore);
+
+    __block int i = 0;
+    dispatch_async(queue, ^{
+        i = 100;
+        NSLog(@"前:%d", i);
+        dispatch_semaphore_signal(semaphore);
+        NSLog(@"后:%d", i);
+    });
+    
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    NSLog(@"i:%d", i);
+    NSLog(@"semaphore2:%@", semaphore);
+    
+    /*
+     注释:由于是将block异步添加到一个并行队列里面，所以程序在主线程跃过block直接到dispatch_semaphore_wait这一行，因为semaphore信号量为0，时间值为DISPATCH_TIME_FOREVER，所以当前线程会一直阻塞，直到block在子线程执行到dispatch_semaphore_signal，使信号量+1，此时semaphore信号量为1了，所以程序继续往下执行。这就保证了线程间同步了。
+     */
+}
+
+//2. 为线程加锁
+- (void)dispatchLockWithSemaphore
+{
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //创建信号量:(默认为1)
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(1);
+    
+    for (int i = 0; i < 100; i++) {
+        dispatch_async(queue, ^{
+            // 相当于加锁
+            dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+            //主线程刷新UI
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSLog(@"i = %zd semaphore = %@", i, semaphore);
+                self.semaphoreLabel.text = [NSString stringWithFormat:@"%d", i];
+            });
+            // 相当于解锁
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+    
+    NSLog(@"完成啦");
+    
+    /*
+     注释：当线程1执行到dispatch_semaphore_wait这一行时，semaphore的信号量为1，所以使信号量-1变为0，并且线程1继续往下执行；
+     如果当在线程1NSLog这一行代码还没执行完的时候，又有线程2来访问，执行dispatch_semaphore_wait时由于此时信号量为0，且时间为DISPATCH_TIME_FOREVER,所以会一直阻塞线程2（此时线程2处于等待状态），直到线程1执行完NSLog并执行完dispatch_semaphore_signal使信号量为1后，线程2才能解除阻塞继续住下执行。
+     以上可以保证同时只有一个线程执行NSLog这一行代码。
+     */
 }
 
 
